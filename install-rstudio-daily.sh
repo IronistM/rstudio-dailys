@@ -51,7 +51,7 @@ install_ubuntu_daily() {
 
     # If previous file exists (from previous partial download, for example),
     # remove it.
-    if [[ -f "${TARGET}" ]]; then
+    if [ -f "${TARGET}" ]; then
         echo -e "Removing existing package file: ${TARGET}"
         rm "${TARGET}"
     fi
@@ -77,9 +77,9 @@ install_ubuntu_daily() {
 }
 
 
-if [[ `uname -s` = "Darwin" ]]; then
+if [ `uname -s` = "Darwin" ]; then
     install_macos_daily
-elif cat /etc/issue | grep -q Elementary ; then
+elif cat /etc/issue | grep -q elementary ; then
     install_ubuntu_daily
 else
     echo "This script only works on OSX/macOS and Elementary OS."
