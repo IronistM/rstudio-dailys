@@ -7,7 +7,7 @@
 set -e
 
 install_macos_daily() {
-    REDIRECT_URL="https://www.rstudio.org/download/latest/daily/desktop/mac/RStudio-latest.dmg"
+    REDIRECT_URL="https://www.rstudio.org/download/latest/preview/desktop/mac/RStudio-latest.dmg"
     echo "Discovering daily build from: ${REDIRECT_URL}"
 
     # Perform a HEAD request to find the redirect target. We use the name of the
@@ -45,7 +45,7 @@ install_macos_daily() {
 }
 
 install_ubuntu_daily() {
-    URL="https://www.rstudio.org/download/latest/daily/desktop/ubuntu64/rstudio-latest-amd64.deb"
+    URL="https://www.rstudio.org/download/latest/preview/desktop/ubuntu64/rstudio-latest-amd64.deb"
     PACKAGE=$(basename "${URL}")
     TARGET="/tmp/${PACKAGE}"
 
