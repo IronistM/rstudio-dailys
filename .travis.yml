@@ -4,6 +4,7 @@ branches:
     - master
 
 language: bash
-sudo: false
+sudo: true
 
-warnings_are_errors: false
+script:
+    - bash install-rstudio-daily.sh
