@@ -1,0 +1,9 @@
+#whitelist branches
+branches:
+  only:
+    - master
+
+language: bash
+sudo: false
+
+warnings_are_errors: false
