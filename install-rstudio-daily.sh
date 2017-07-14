@@ -79,7 +79,7 @@ install_ubuntu_daily() {
 
 if [ `uname -s` = "Darwin" ]; then
     install_macos_daily
-elif cat /etc/issue | grep -q 'elementary\|ubuntu' ; then
+elif cat /etc/issue | grep -q ubuntu ; then
     install_ubuntu_daily
 else
     echo "This script only works on OSX/macOS and Elementary OS."
