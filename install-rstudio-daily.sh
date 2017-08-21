@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Installs the latest RStudio daily desktop build for OSX/macOS and Ubuntu(amd64)
 #
