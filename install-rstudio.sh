@@ -11,9 +11,8 @@ VERSION=$1
 
 if [ "$VERSION" = "" ]; then
 
-        echo "D: you did not supply a VERSION! Using `latest`"
-        VERSION = "latest"
-        exit
+        echo "D: you did not supply a VERSION! Using stable"
+        VERSION="stable"
 
 fi
 
