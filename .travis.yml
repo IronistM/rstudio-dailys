@@ -17,4 +17,8 @@ before_install:
   - sudo apt-get -y install libgl1-mesa-dev
 
 script:
-    - bash install-rstudio-daily.sh
+    # Adding type installs to check which one fails
+    - bash install-rstudio.sh preview
+    - bash install-rstudio.sh daily
+    - bash install-rstudio.sh stable
+    - bash install-rstudio.sh
