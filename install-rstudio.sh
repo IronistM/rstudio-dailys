@@ -11,7 +11,7 @@ VERSION=$1
 
 if [ "$VERSION" = "" ]; then
 
-        echo "D: you did not supply a VERSION! Using stable"
+        echo "Hey, you did not supply a VERSION input! Using stable"
         VERSION="stable"
 
 fi
