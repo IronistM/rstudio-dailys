@@ -15,6 +15,7 @@ before_install:
   - sudo apt-get -y install libjpeg62
    # Need the OpenGL development libraries to build QtGui
   - sudo apt-get -y install libgl1-mesa-dev
+  - sudo apt-get -y install r-base-core
 
 script:
     # Adding type installs to check which one fails
