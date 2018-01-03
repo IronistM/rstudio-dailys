@@ -17,7 +17,7 @@ before_install:
   - sudo apt-get -y install libgl1-mesa-dev
   - sudo apt-get -y install r-recommended
    # Install packages from CRAN
-  - sudo R --vanilla -e 'install.packages(c("httr","jsonlite"), repos="http://cran.us.r-project.org")'  
+  - sudo R --vanilla -e 'install.packages(c("httr","jsonlite","xml2), repos="http://cran.us.r-project.org")'  
 
 script:
     # Adding type installs to check which one fails
