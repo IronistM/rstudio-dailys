@@ -25,4 +25,4 @@ script:
     - bash install-rstudio.sh daily
     - bash install-rstudio.sh stable
     - bash install-rstudio.sh
-    - cd R && R < latest.R --no-save
+    - cd R && R < latest.R --no-save && sudo dpkg -i rstudio-desktop-daily-amd64.deb 
