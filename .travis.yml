@@ -22,4 +22,4 @@ script:
     - bash install-rstudio.sh daily
     - bash install-rstudio.sh stable
     - bash install-rstudio.sh
-    - bash cd /R && R < latest.R --no-save
+    - cd R && R < latest.R --no-save
